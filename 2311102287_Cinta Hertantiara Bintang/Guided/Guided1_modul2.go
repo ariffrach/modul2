@@ -5,7 +5,7 @@ import "fmt"
 func main() {
 	var (
 		satu, dua, tiga string
-		temp            string
+		temp string
 	)
 	fmt.Print("Masukan input string: ")
 	fmt.Scanln(&satu)
@@ -15,8 +15,8 @@ func main() {
 	fmt.Scanln(&tiga)
 	fmt.Println("Output awal= " + satu + " " + dua + " " + tiga)
 	temp = satu
-	temp = dua
-	temp = tiga
+	satu = dua
+	dua = tiga
 	tiga = temp
-	fmt.Println("Output awal= " + satu + " " + dua + " " + tiga)
+	fmt.Println("Output akhir= " + satu + " " + dua + " " + tiga)
 }
